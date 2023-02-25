@@ -1,0 +1,9 @@
+{
+    "name": "garbanzo",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "cd frontend/built && node server.js",
+        "build": "cd frontend && npm run build"
+    }
+
+}

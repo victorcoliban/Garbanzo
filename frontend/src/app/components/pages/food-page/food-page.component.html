@@ -1,0 +1,32 @@
+<app-not-found
+  [visible]="!food"
+  notFoundMessage="Food Not Found"
+  resetLinkText="Back To Homepage">
+</app-not-found>
+<div class="back-to-menu">
+  <a routerLink="/"><i class="fa fa-arrow-left"></i>&#160; Back to menu</a>
+</div>
+<div *ngIf="food" class="container">
+  <img [src]="food.imageUrl" [alt]="food.name" />
+  <div class="details">
+    <div class="header">
+      <span class="name">
+        {{ food.name }}
+      </span>
+    </div>
+    <div class="ingredients">
+      <span>
+        {{ food.ingredients }}
+      </span>
+    </div>
+
+    <div class="price">
+      <span class="label">
+        {{ food.price | currency: 'EUR'}}
+      </span>
+    </div>
+
+    <button (click)="addToCart()">Add To Cart</button>
+  </div>
+</div>
+
