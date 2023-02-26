@@ -7,14 +7,18 @@
     <form [formGroup]="checkoutForm">
       <text-input [control]="fc.name" label="Name"></text-input>
       <text-input [control]="fc.address" label="Address"></text-input>
+      <!-- <a class="find-location" (click)="findMyLocation()">
+        Find My Location &#160;<i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+      </a> -->
     </form>
     <order-items-list [order]="order"></order-items-list>
   </div>
-  <!-- <div class="map">
+  <div class="map">
     <app-title
     title="Choose Your Address On Map"
     fontSize="1.6rem"></app-title>
-  </div> -->
+    <map [order]="order"></map>
+  </div>
   <div class="buttons-container">
     <div class="buttons">
       <button (click)="createOrder()">

@@ -8,7 +8,7 @@
 
 .content {
   width: 35rem;
-  /* margin-right: 3rem; */
+  margin-right: 3rem;
 }
 
 .content, form {
@@ -61,3 +61,14 @@ a {
 a:hover {
   color: #95ab08;
 }
+
+/* .find-location {
+  color: #5f5f5f;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.find-location:hover {
+  cursor: pointer;
+} */
