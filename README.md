@@ -160,6 +160,13 @@
         6.  Add Order Service
             1.  Add create Method
         7.  Add Auth Interceptor
+16. Payment Page
+    1.  Generate Component
+    2.  Add 'getOrderForCurrentUser' api
+    3.  Add Order Service method
+    4.  Connect Component to Service
+    5.  Make the map component readonly
+
 
 
 
